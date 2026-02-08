@@ -1,8 +1,21 @@
-<?php
-if (!preg_match('/Mobi|Android|iPhone|iPad/i', $_SERVER['HTTP_USER_AGENT'])) {
-    header("Location: https://www.google.com/", true, 302);
-    exit;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carregando...</title>
+
+  <script>
+    // Detecta se NÃO é dispositivo móvel
+    if (!/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.replace("https://www.google.com/");
+    }
+  </script>
+</head>
+
+<body>
+</body>
+</html>
+
 
 
 <html lang="pt-BR"><head></head><body>﻿
